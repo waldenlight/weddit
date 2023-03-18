@@ -1,6 +1,36 @@
+body {
+  background-color: #d6d6d6;
+}
+
+header {
+  background-color: #4558ff;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
 header,
 .post:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+main {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+main a {
+  color: #000e8b;
+}
+
+main a:hover {
+  color: #000853;
 }
 
 .no-button {
@@ -8,13 +38,13 @@ header,
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #fff;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
+  color: white;
   text-decoration: underline;
 }
 
