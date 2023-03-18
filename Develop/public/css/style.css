@@ -10,6 +10,11 @@ header a {
   color: white;
 }
 
+header a:not(:last-of-type) {
+  color: white;
+  margin: 0px 20px;
+}
+
 header a:hover {
   color: white;
 }
