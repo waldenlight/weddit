@@ -28,6 +28,15 @@ main {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
 }
 
 main a {
@@ -57,4 +66,25 @@ main a:hover {
   color: #056605;
   font-weight: bold;
   margin-left: -5px;
+}
+
+input#comment {
+  width: 30rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+
+.text-center {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
