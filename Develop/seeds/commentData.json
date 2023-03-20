@@ -1,14 +1,14 @@
 [
     {
-        "name": "Amiko",
-        "description": "Very good!"
+        "description": "Very good!",
+        "post_id": 1
     },
     {
-        "name": "Lernantino",
-        "description": "Amazing."
+        "description": "Amazing.",
+        "post_id": 1
     },
     {
-        "name": "Sal",
-        "description": "Very well written."
+        "description": "Very well written.",
+        "post_id": 1
     }
 ]

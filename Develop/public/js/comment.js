@@ -8,15 +8,14 @@ const newFormHandler = async (event) => {
     if (description) {
         const response = await fetch(`/api/comments`, {
             method: 'POST',
-            body: JSON.stringify({ description, currentPost }),
+            body: JSON.stringify({ description }),
             headers: {
                 'Content-Type': 'application/json',
             },
         });
 
         if (response.ok) {
-            // TODO: Replace with current post
-            document.location.replace(`/comment/${currentPost}`);
+            document.location.replace(`/post/${currentPost}`);
         } else {
             alert('Failed to create comment');
         }
