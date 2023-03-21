@@ -14,29 +14,21 @@
         </div>
       </form>
     </div>
-    {{!-- {{#if comment}} --}}
     <div class="col-md-6 comment-list">
       <h3>Comments:</h3>
+      {{#if comments}}
       {{#each comments as |comment| }}
       <div class="row mb-4 comment">
-        <div class="col-md-5">
-          <h2>
-            {{comment.description}}
-          </h2>
-          <p>Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
-        </div>
-        {{!-- <div class="col-md-7">
-          <p>
-            {{comment.description}}
-          </p>
-        </div> --}}
+        <p>
+          {{comment.description}}
+        </p>
+        <p class="comment-info">Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
       </div>
       {{/each}}
+      {{else}}
+      <p>Be the first to comment!</p>
+      {{/if}}
     </div>
-    {{!-- {{/if}} --}}
-    {{!-- <p>
-      <a href="/dashboard"><button class="btn btn-primary">New Post!</button></a>
-    </p> --}}
   </div>
 </div>
 
