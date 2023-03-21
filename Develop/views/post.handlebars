@@ -1,14 +1,8 @@
 <div class="center">
   <div class="text-center">
     <h2>{{name}}</h2>
-    {{!-- <p>{{{get_emoji}}}</p> --}}
     <p>{{description}}</p>
     <p>Created by {{user.name}} on {{format_date date_created}}</p>
-    {{!-- <p>
-      <span for="img" aria-label="money">💲</span>
-      <span class="dollar-amount">{{format_amount needed_funding}}</span>
-      needed
-    </p> --}}
     <div class="form">
       <form class="form new-comment-form">
         <div class="form-group">
@@ -20,15 +14,13 @@
         </div>
       </form>
     </div>
-    {{#if comments.length}}
+    {{!-- {{#if comment}} --}}
     <div class="col-md-6 comment-list">
       <h3>Comments:</h3>
       {{#each comments as |comment| }}
       <div class="row mb-4 comment">
         <div class="col-md-5">
           <h2>
-            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-            {{!-- {{{get_emoji}}} --}}
             {{comment.description}}
           </h2>
           <p>Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
@@ -41,11 +33,11 @@
       </div>
       {{/each}}
     </div>
-    {{/if}}
+    {{!-- {{/if}} --}}
     {{!-- <p>
       <a href="/dashboard"><button class="btn btn-primary">New Post!</button></a>
     </p> --}}
   </div>
 </div>
 
-<script src="../public/js/comment.js"></script>
+<script src="/js/comment.js"></script>

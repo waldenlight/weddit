@@ -1,4 +1,6 @@
-const currentPost = this.href.substring(this.href.lastIndexOf('/') + 1);
+const url = this.location.href;
+const splitURL = url.toString().split("/");
+const currentPost = splitURL[splitURL.length - 1];
 
 const newFormHandler = async (event) => {
     event.preventDefault();
@@ -8,7 +10,7 @@ const newFormHandler = async (event) => {
     if (description) {
         const response = await fetch(`/api/comments`, {
             method: 'POST',
-            body: JSON.stringify({ description }),
+            body: JSON.stringify({ description, currentPost }),
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -42,6 +44,6 @@ document
     .querySelector('.new-comment-form')
     .addEventListener('submit', newFormHandler);
 
-document
-    .querySelector('.comment-list')
-    .addEventListener('click', delButtonHandler);
+// document
+//     .querySelector('.comment-list')
+//     .addEventListener('click', delButtonHandler);
