@@ -109,3 +109,11 @@ input#comment {
 .comment-info {
   font-size: 1rem;
 }
+
+.form-title {
+  height: 3rem;
+}
+
+.update-desc {
+  height: 8rem;
+}
