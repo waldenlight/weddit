@@ -23,7 +23,12 @@ A communal blog about all things software development.
 ## Installation
 N/A
 ## Usage
-Simply access at the live URL Here.
+Simply access at the live URL [Here](https://weddit.herokuapp.com/).
+
+You should see this:
+
+![Screenshot 2023-03-23 214404](https://user-images.githubusercontent.com/76961678/227419249-7f86174e-3991-434f-b321-b933b0a156f9.png)
+
 ## Credits
 N/A
 ## License
