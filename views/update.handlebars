@@ -1,13 +1,16 @@
 <div class="center">
     <div class="text-center">
+        <h2>Edit Post</h2>
         <form class="form update-post-form">
             <div class="form-group">
                 <label for="post-name">Title</label>
-                <input value="{{name}}" class="form-title form-input" type="text" id="post-name" name="post-name" />
+                <input value="{{name}}" class="form-title form-input" type="text" id="post-name-update"
+                    name="post-name" />
             </div>
             <div class="form-group">
                 <label for="post-desc">Description</label>
-                <textarea class="update-desc form-input" id="post-desc" name="post-desc">{{description}}</textarea>
+                <textarea class="update-desc form-input" id="post-desc-update"
+                    name="post-desc">{{description}}</textarea>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" data-id="{{id}}">Update</button>

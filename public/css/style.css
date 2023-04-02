@@ -50,6 +50,7 @@ main a:hover {
   background: none;
   border: none;
   padding: 0;
+  margin: 10px 0;
   cursor: pointer;
   color: #fff;
   text-decoration: none;
@@ -59,12 +60,6 @@ main a:hover {
 .no-button:hover {
   color: white;
   text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
 }
 
 input#comment {
@@ -77,10 +72,6 @@ input#comment {
   align-items: center;
   justify-content: center;
   width: 30rem;
-}
-
-.text-center {
-  display: flex;
 }
 
 .center {
@@ -101,9 +92,16 @@ input#comment {
 
 .comment {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   margin: 0rem, 2rem;
+  /* padding: 0.5rem 0.2rem 0rem 0.2rem;
+  border: #ccc 5px solid;
+  border-radius: 10px; */
+}
+
+.comment-list p {
+  margin: 5px 5px;
 }
 
 .comment-info {
@@ -114,6 +112,145 @@ input#comment {
   height: 3rem;
 }
 
+.col-md-6 h2,
+.post-list h3 {
+  margin-top: 20px;
+}
+
 .update-desc {
   height: 8rem;
+}
+
+#post-name-update,
+#post-desc-update {
+  width: 400px;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 1120px) {
+
+  #email-login,
+  #password-login,
+  #name-signup,
+  #email-signup,
+  #password-signup,
+  #post-name,
+  #post-desc {
+    width: 400px;
+  }
+
+}
+
+@media only screen and (max-width: 930px) {
+
+  #email-login,
+  #password-login,
+  #name-signup,
+  #email-signup,
+  #password-signup,
+  #post-name,
+  #post-desc {
+    width: 300px;
+    max-width: 300px;
+    font-size: 15px;
+  }
+
+  .form-group label {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  h1 a {
+    font-size: 30px;
+  }
+
+  main h2 {
+    font-size: 25px;
+  }
+
+  #comment-desc {
+    width: 300px;
+    margin-left: 90px;
+  }
+
+  #email-login,
+  #password-login,
+  #name-signup,
+  #email-signup,
+  #password-signup,
+  #post-name,
+  #post-desc {
+    width: 300px;
+  }
+
+  #post-name-update,
+  #post-desc-update {
+    width: 400px;
+    max-width: 400px;
+    margin-left: 40px;
+  }
+
+  .comment {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  main p {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 a {
+    font-size: 30px;
+  }
+
+  main p,
+  .author {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  main h2,
+  main h3 {
+    font-size: 20px;
+  }
+
+  #post-name-update,
+  #post-desc-update {
+    width: 280px;
+    max-width: 280px;
+    margin-left: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 370px) {
+  h1 a {
+    font-size: 25px;
+  }
+
+  main p {
+    width: 260px;
+  }
+
+  #comment-desc {
+    width: 200px;
+    margin-left: 140px;
+  }
+
+  #email-login,
+  #password-login,
+  #name-signup,
+  #email-signup,
+  #password-signup,
+  #post-name,
+  #post-desc {
+    width: 250px;
+  }
+
 }
