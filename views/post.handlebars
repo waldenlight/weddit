@@ -2,7 +2,7 @@
   <div class="text-center">
     <h2>{{name}}</h2>
     <p>{{description}}</p>
-    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p class="author">Created by {{user.name}} on {{format_date date_created}}</p>
     <div class="form">
       <form class="form new-comment-form">
         <div class="form-group">
@@ -22,7 +22,7 @@
         <p>
           {{comment.description}}
         </p>
-        <p class="comment-info">Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
+        <p class="comment-info">{{comment.user.name}} {{format_date comment.date_created}}</p>
       </div>
       {{/each}}
       {{else}}
